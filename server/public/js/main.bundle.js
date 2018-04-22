@@ -428,7 +428,7 @@ module.exports = ""
 /***/ "./app/app/components/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  home works!\n</p>\n"
+module.exports = "<clr-main-container>\n\n  <header class=\"header-1\">\n    <div class=\"branding\">\n      <a class=\"nav-link\">\n        <span class=\"title\">Casin</span>\n      </a>\n    </div>\n    <div class=\"header-actions\">\n      <a routerLink=\"signin\" class=\"nav-link nav-text\">\n        Log In\n      </a>\n      <a routerLink=\"signup\" class=\"nav-link nav-text\">\n        Signup\n      </a>\n      <a routerLink=\"app/homepage\" class=\"nav-link nav-text\">\n        Go To App\n      </a>\n    </div>\n  </header>\n  <p>\n    This is the main home page\n  </p>\n\n</clr-main-container>"
 
 /***/ }),
 
