@@ -27,7 +27,7 @@ module.exports = ""
 /***/ "./app/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>This is the Welcome Pages?</h1>\r\n<p>Some text</p>\r\n<p>Some more text</p>"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -76,6 +76,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var angular_1 = __webpack_require__("./node_modules/@clr/angular/esm5/clr-angular.js");
+var app_routing_module_1 = __webpack_require__("./app/app/modules/app-routing/app-routing.module.ts");
 var app_component_1 = __webpack_require__("./app/app/app.component.ts");
 var home_component_1 = __webpack_require__("./app/app/components/home/home.component.ts");
 var auth_component_1 = __webpack_require__("./app/app/components/auth/auth.component.ts");
@@ -105,7 +106,7 @@ var AppModule = /** @class */ (function () {
                 team_component_1.TeamComponent,
                 nav_component_1.NavComponent
             ],
-            imports: [platform_browser_1.BrowserModule, angular_1.ClarityModule],
+            imports: [platform_browser_1.BrowserModule, angular_1.ClarityModule, app_routing_module_1.AppRoutingModule],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
         })
@@ -613,6 +614,40 @@ var TeamComponent = /** @class */ (function () {
     return TeamComponent;
 }());
 exports.TeamComponent = TeamComponent;
+
+
+/***/ }),
+
+/***/ "./app/app/modules/app-routing/app-routing.module.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var common_1 = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+var home_component_1 = __webpack_require__("./app/app/components/home/home.component.ts");
+var routes = [{ path: '', component: home_component_1.HomeComponent }];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule, router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule],
+            declarations: []
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+exports.AppRoutingModule = AppRoutingModule;
 
 
 /***/ }),

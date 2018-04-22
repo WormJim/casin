@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ClarityModule } from '@clr/angular';
+import { AppRoutingModule } from './modules/app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -28,7 +29,7 @@ import { NavComponent } from './components/nav/nav.component';
     TeamComponent,
     NavComponent
   ],
-  imports: [BrowserModule, ClarityModule],
+  imports: [BrowserModule, ClarityModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
