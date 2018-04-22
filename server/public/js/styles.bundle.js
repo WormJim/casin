@@ -590,8 +590,8 @@ module.exports = function (css) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./app/styles.css");
-__webpack_require__("./node_modules/@clr/ui/clr-ui.min.css");
-module.exports = __webpack_require__("./node_modules/@clr/icons/clr-icons.min.css");
+__webpack_require__("./node_modules/@clr/icons/clr-icons.min.css");
+module.exports = __webpack_require__("./node_modules/@clr/ui/clr-ui.min.css");
 
 
 /***/ })
