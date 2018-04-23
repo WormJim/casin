@@ -14,6 +14,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { BaseComponent } from './components/base/base.component';
 import { TeamComponent } from './components/team/team.component';
 import { NavComponent } from './components/nav/nav.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { ShopComponent } from './components/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { NavComponent } from './components/nav/nav.component';
     ContactComponent,
     BaseComponent,
     TeamComponent,
-    NavComponent
+    NavComponent,
+    LandingComponent,
+    ShopComponent
   ],
   imports: [BrowserModule, ClarityModule, AppRoutingModule],
   providers: [],
