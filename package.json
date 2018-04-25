@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "nodemon ./server/bin/www",
-    "build": "ng build --watch",
+    "start": "ng serve",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -26,14 +26,11 @@
     "@clr/ui": "^0.11.14",
     "@webcomponents/custom-elements": "^1.0.0",
     "bootstrap": "^4.0.0-alpha.5",
-    "cookie-parser": "~1.4.3",
     "core-js": "^2.4.1",
     "debug": "~2.6.9",
     "express": "~4.16.0",
-    "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
     "jquery": "^3.3.1",
-    "morgan": "~1.9.0",
     "rxjs": "^5.5.10",
     "zone.js": "^0.8.26"
   },
@@ -52,7 +49,6 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "nodemon": "^1.17.3",
     "protractor": "~5.1.2",
     "reload": "^2.2.2",
     "ts-node": "~4.1.0",
