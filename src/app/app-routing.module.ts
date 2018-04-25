@@ -14,8 +14,6 @@ const appRoutes: Routes = [
   {
     path: '',
     loadChildren: './modules/landing/landing.module#LandingModule'
-    // redirectTo: '/landing',
-    // pathMatch: 'full'
   },
   { path: '**', redirectTo: '/not-found' }
 ];
