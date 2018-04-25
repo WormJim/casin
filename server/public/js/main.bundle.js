@@ -797,7 +797,7 @@ module.exports = ""
 /***/ "./app/app/components/shop/journal/journal.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Journals</h2>\n<ul>\n  <li *ngFor=\"let journal of Journals$ | async\">\n    <a [routerLink]=\"['/journal', journal.id]\">\n      <span>{{ journal.id}}</span>{{journal.name}}</a>\n  </li>\n</ul>"
+module.exports = "<h2>Journals</h2>\r\n<ul>\r\n  <li *ngFor=\"let journal of Journals$ | async\">\r\n    <a [routerLink]=\"['/journal', journal.id]\">\r\n      <span>{{ journal.id}}</span>{{journal.name}}</a>\r\n  </li>\r\n</ul>"
 
 /***/ }),
 
