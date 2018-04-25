@@ -1,0 +1,7 @@
+<h2>Journals</h2>
+<ul>
+  <li *ngFor="let journal of Journals$ | async">
+    <a [routerLink]="['/journal', journal.id]">
+      <span>{{ journal.id}}</span>{{journal.name}}</a>
+  </li>
+</ul>
