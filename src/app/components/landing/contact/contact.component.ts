@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SiteContentService } from '../../../services/site-content.service';
 import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
+import { SiteContentService } from '../../../services/site-content.service';
 
 @Component({
   selector: 'app-contact',

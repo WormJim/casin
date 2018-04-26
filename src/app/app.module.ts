@@ -8,17 +8,17 @@ import { LandingModule } from './modules/landing/landing.module';
 import { ShopModule } from './modules/shop/shop.module';
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LandingRoutingModule } from './modules/landing/landing-routing.module';
+import { ShopRoutingModule } from './modules/shop/shop-routing.module';
+
+import { Router } from '@angular/router';
+import { environment } from '../environments/environment.prod';
 
 import { AppComponent } from './app.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { PageNotFoundComponent } from './not-found.component';
-import { LandingRoutingModule } from './modules/landing/landing-routing.module';
-import { ShopRoutingModule } from './modules/shop/shop-routing.module';
-import { Router } from '@angular/router';
-import { environment } from '../environments/environment.prod';
 
 @NgModule({
-  declarations: [AppComponent, AuthComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
     ClarityModule,
@@ -31,6 +31,7 @@ import { environment } from '../environments/environment.prod';
     ShopRoutingModule,
     AppRoutingModule
   ],
+  declarations: [AppComponent, AuthComponent, PageNotFoundComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

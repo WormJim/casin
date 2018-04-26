@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
-import { SiteContentService } from '../../../services/site-content.service';
 import { Subscription } from 'rxjs/Subscription';
+import { SiteContentService } from '../../../services/site-content.service';
 
 @Component({
   selector: 'app-about',
@@ -19,12 +19,6 @@ export class AboutComponent implements OnInit {
   constructor(private contentService: SiteContentService) {
     this.content$ = this.contentService.readContent(this.page);
     console.log('The About Info Observable', this.content$);
-
-    // .map(index => {
-    //   return index.filter(obj => {
-    //     return obj.id === this.page;
-    //   });
-    // });
 
     this.aboutSub = this.content$.subscribe(payload => {
       this.about = payload;
