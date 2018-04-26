@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LandingRoutingModule } from './landing-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { HomeComponent } from '../../components/landing/home/home.component';
 import { AboutComponent } from '../../components/landing/about/about.component';
 import { MissionComponent } from '../../components/landing/mission/mission.component';
@@ -13,6 +15,16 @@ import { LandingComponent } from '../../components/landing/landing.component';
 import { ClarityModule } from '@clr/angular';
 import { NavComponent } from '../../components/landing/nav/nav.component';
 import { NewsComponent } from '../../components/landing/news/news.component';
+import { SiteContentService } from '../../services/site-content.service';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faTwitter, faFacebook, faFacebookF, faLinkedin, faLinkedinIn);
 
 @NgModule({
   declarations: [
@@ -27,6 +39,13 @@ import { NewsComponent } from '../../components/landing/news/news.component';
     HeaderComponent,
     NavComponent
   ],
-  imports: [CommonModule, FormsModule, ClarityModule, LandingRoutingModule]
+  imports: [
+    CommonModule,
+    FormsModule,
+    ClarityModule,
+    FontAwesomeModule,
+    LandingRoutingModule
+  ],
+  providers: [SiteContentService]
 })
 export class LandingModule {}

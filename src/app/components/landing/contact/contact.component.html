@@ -1,3 +1,72 @@
-<p>
-  contact works!
-</p>
+<div *ngIf="contact; else elseBlock">
+  <div class="row">
+    <div class="col-lg-4 col-md-5 col-sm-7 col-xs-12">
+      <div class="card">
+        <div class="card-header">
+          {{ contact.id | uppercase }}
+        </div>
+        <div class="card-block p">
+          <div class="card-text">
+            <div class="row">
+              <div class="col-xs-1">
+                <clr-icon shape="envelope"></clr-icon>
+              </div>
+              <div class="col-xs">
+                {{ contact.email }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1">
+                <clr-icon shape="phone-handset"></clr-icon>
+              </div>
+              <div class="col-xs">
+                {{ contact.phone | uppercase }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1">
+                <clr-icon shape="hourglass"></clr-icon>
+              </div>
+              <div class="col-xs">
+                {{ contact.days | titlecase}}, {{ contact.hours | titlecase}} EST
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1">
+                <clr-icon shape="home"></clr-icon>
+              </div>
+              <div class="col-xs">
+                {{ contact.address.street | titlecase }}, Suite {{ contact.address.suite | uppercase }}
+              </div>
+              <div class="col-xs-12 push-xs-1">
+                {{ contact.address.city | titlecase }}, {{ contact.address.state | uppercase }} {{ contact.address.zip | titlecase}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-title">
+            {{ 'Follow Us' | uppercase}}
+          </div>
+          <div class="row flex-items-xs-left">
+            <div class="col-xs-2">
+              <fa-icon [icon]="['fab', 'twitter']" size="lg"></fa-icon>
+            </div>
+            <div class="col-xs-2">
+              <fa-icon [icon]="['fab', 'facebook-f']" size="lg"></fa-icon>
+            </div>
+            <div class="col-xs-2">
+              <fa-icon [icon]="['fab', 'linkedin-in']" size="lg"></fa-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #elseBlock>
+  <span class="spinner spinner-md">
+    Loading...
+  </span>
+</ng-template>

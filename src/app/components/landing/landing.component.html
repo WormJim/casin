@@ -1,7 +1,16 @@
 <clr-main-container>
-  <app-header></app-header>
+
+  <clr-header>
+    <app-header></app-header>
+  </clr-header>
+
   <app-nav></app-nav>
+
   <div class="content-container">
-    <router-outlet></router-outlet>
+    <main class="content-area">
+      <router-outlet></router-outlet>
+    </main>
   </div>
+
+
 </clr-main-container>

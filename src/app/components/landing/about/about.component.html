@@ -1,3 +1,14 @@
-<p>
-  about works!
-</p>
+<!-- <ul *ngIf="about">
+  <li *ngFor="let item of about.array">
+    {{item}}
+  </li>
+</ul> -->
+
+<div class="row flex-items-xs-center">
+  <div class="col-md-8 col-xs-12">
+    <p *ngFor="let item of about.array">
+      {{item}}
+    </p>
+  </div>
+</div>
+<app-contact></app-contact>
