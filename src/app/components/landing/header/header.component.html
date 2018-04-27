@@ -1,31 +1,12 @@
-<div class="row flex-items-md-between">
-  <div class="col-md-4">
-    <div class="branding">
-      <a class="nav-link">
-        <span routerLink="/">CASIN</span>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <form class="search">
-      <label for="search_input">
-        <input type="text" id="search_input" placeholder="Search Publications">
-      </label>
-    </form>
-  </div>
+<div class="header-inner">
+  <!-- <div class="branding"> -->
+  <a class="logo-and-title" routerLink="/">
+    <span class="title siteNav-logo">CASIN</span>
+  </a>
+  <!-- </div> -->
+  <button class="btn btn-link btn-sm" routerLink="/member">Member Login</button>
 </div>
 
-<!-- <header class="header-1">
-  <div class="branding">
-    <a class="nav-link">
-      <span routerLink="/">CASIN</span>
-    </a>
-  </div>
-  <div class="header-action">
-    <form class="search">
-      <label for="search_input">
-        <input type="text" id="search_input" placeholder="Search Publications">
-      </label>
-    </form>
-  </div>
-</header> -->
+<div class="header-inner s-height">
+  <app-nav></app-nav>
+</div>

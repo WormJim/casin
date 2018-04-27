@@ -20,7 +20,8 @@ const landingRoutes: Routes = [
       { path: 'news', component: NewsComponent },
       { path: 'mission', component: MissionComponent },
       { path: 'team', component: TeamComponent },
-      { path: 'journal', redirectTo: '/shop' }
+      { path: 'journal', redirectTo: '/shop' },
+      { path: 'member', redirectTo: '/members' }
     ]
   }
 ];

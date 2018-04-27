@@ -23,6 +23,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { SiteContentService } from '../../services/site-content.service';
+import { BaseComponent } from '../../components/landing/base/base.component';
 
 library.add(faTwitter, faFacebook, faFacebookF, faLinkedin, faLinkedinIn);
 
@@ -37,7 +38,8 @@ library.add(faTwitter, faFacebook, faFacebookF, faLinkedin, faLinkedinIn);
     FooterComponent,
     NewsComponent,
     HeaderComponent,
-    NavComponent
+    NavComponent,
+    BaseComponent
   ],
   imports: [
     CommonModule,

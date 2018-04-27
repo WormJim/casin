@@ -6,8 +6,8 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 import { ClarityModule } from '@clr/angular';
 import { LandingModule } from './modules/landing/landing.module';
 import { ShopModule } from './modules/shop/shop.module';
+import { MemberModule } from './modules/member/member.module';
 import { AppRoutingModule } from './app-routing.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LandingRoutingModule } from './modules/landing/landing-routing.module';
 import { ShopRoutingModule } from './modules/shop/shop-routing.module';
 
@@ -17,6 +17,7 @@ import { environment } from '../environments/environment.prod';
 import { AppComponent } from './app.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { PageNotFoundComponent } from './not-found.component';
+import { MemberRoutingModule } from './modules/member/member-routing.module';
 
 @NgModule({
   imports: [
@@ -27,8 +28,10 @@ import { PageNotFoundComponent } from './not-found.component';
     AngularFireStorageModule,
     LandingModule,
     ShopModule,
+    MemberModule,
     LandingRoutingModule,
     ShopRoutingModule,
+    MemberRoutingModule,
     AppRoutingModule
   ],
   declarations: [AppComponent, AuthComponent, PageNotFoundComponent],
@@ -37,6 +40,6 @@ import { PageNotFoundComponent } from './not-found.component';
 })
 export class AppModule {
   constructor(router: Router) {
-    // console.log('Routes: ', JSON.stringify(router.config, undefined, 2)); // Uncomment to see route path
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2)); // Uncomment to see route path
   }
 }

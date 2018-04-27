@@ -12,6 +12,10 @@ const appRoutes: Routes = [
     loadChildren: 'app/modules/shop/shop.module#ShopModule'
   },
   {
+    path: 'members',
+    loadChildren: 'app/modules/member/member.module#MemberModule'
+  },
+  {
     path: '',
     loadChildren: './modules/landing/landing.module#LandingModule'
   },

@@ -1,16 +1,24 @@
-<clr-main-container>
+<div class="main-container">
 
-  <clr-header>
+  <header class="sticky-top">
     <app-header></app-header>
-  </clr-header>
+  </header>
 
-  <app-nav></app-nav>
 
   <div class="content-container">
+
     <main class="content-area">
       <router-outlet></router-outlet>
     </main>
+
   </div>
 
+  <footer class="flex-items-xs-bottom" style="background-color: #0094D3">
+    <app-footer></app-footer>
+  </footer>
 
-</clr-main-container>
+  <footer class="flex-items-xs-bottom" style="background-color: #0065AB">
+    <app-base></app-base>
+  </footer>
+
+</div>

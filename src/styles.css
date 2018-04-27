@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+.drop-margin {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+/* .colors {
+  color: #a6d8e7, #ff5500, #0094d3, #0065ab, #ffb38f, #003d79;
+}  */
+
+.siteNav-logo {
+  z-index: 700;
+  border: 0;
+}
+
+.metabar {
+  position: absolute;
+  display: flex;
+  z-index: 500;
+  display: flex;
+  width: 100%;
+  top: 0;
+}
+
+header {
+  position: relative;
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 700;
+  white-space: normal;
+}
+.header-inner {
+  position: relative;
+  height: 2.8rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-container {
+  /* height: 0; */
+  min-height: 100vh;
+}
+
+.header-block {
+}
+
+.header-block-below {
+  height: 1.5rem;
+}
+
+.s-height {
+  height: 1.5rem;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.content-container {
+  /* position: relative; */
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
